@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background-image: url(http://braccousa.com/wp-content/uploads/2013/07/Dark-wooden-website-background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    width: 37.5em;
+    height: 37.5em;
+    position: relative;
+}
+
+.simon {
+    width: 31.25em;
+    height: 31.25em;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.simon::before {
+    position: absolute;
+    background-color: #000;
+    content: "";
+    height: 13.75em;
+    width: 13.75em;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.colors {
+    height: 13.12em;
+    width: 13.12em;
+    position: absolute;
+}
+
+.green {
+    background-color: #00A300;
+    border-radius: 13em 0 0 0;
+    top: 1.87em;
+    left: 1.87em;
+}
+
+.red {
+    background-color: #FF0000;
+    border-radius: 0 13em 0 0;
+    top: 1.87em;
+    right: 1.87em;
+}
+
+.blue {
+    background-color: #0000FF;
+    border-radius: 0 0 13em 0;
+    bottom: 1.87em;
+    right: 1.87em;
+}
+
+.yellow {
+    background-color: #FFFF00;
+    border-radius: 0 0 0 13em;
+    bottom: 1.87em;
+    left: 1.87em;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2px;
+    align-items: center;
+    height: 3em;
+    width: 4em;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 2.5em;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#level-display {
+    background-color: #750000;
+    color: #FF0000;
+    height: 40px;
+    width: 60px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#level-label {
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
